@@ -15,4 +15,9 @@ The formula calculates the average of the function values at the endpoints and t
 Simpson's 1/3 rule is particularly useful when the function being integrated is relatively smooth or has an even degree. However, it requires an even number of subintervals to be applicable. It provides a more accurate approximation of definite integrals and is commonly employed in numerical analysis and scientific computing for its improved precision over the trapezoidal rule.
 
 # Simpsons 3/8 Rule
+Simpson's 3/8 rule is a numerical integration method used to estimate definite integrals with even higher accuracy compared to Simpson's 1/3 rule. It extends the quadratic polynomial approximation to cubic polynomials.
+Similar to Simpson's 1/3 rule, the 3/8 rule divides the interval into subintervals. However, instead of using three points, it uses four points within each subinterval - the endpoints and two additional points evenly spaced between them. These four points are used to fit a cubic polynomial, which represents the estimated integral for that subinterval.
+Mathematically, for a function f(x) to be integrated over an interval [a, b], Simpson's 3/8 rule can be expressed as:
+∫[a,b] f(x) dx ≈ (b - a) * [(f(a) + 3f((2a+b)/3) + 3f((a+2b)/3) + f(b)) / 8]
+The formula calculates the weighted average of the function values at the endpoints and the two additional points, multiplied by the width of the interval divided by 8. Simpson's 3/8 rule provides even higher accuracy, especially for functions with smooth curves or higher-degree polynomials. It is widely used in numerical analysis and scientific computing when more precision is required for definite integration approximations.
 
