@@ -6,6 +6,11 @@ Simpson's 1/3 rule strikes a balance between accuracy and computational efficien
 # Trapezoidal Rule
 The trapezoidal rule is a numerical integration method that approximates definite integrals. It divides the interval into trapezoids and sums their areas to estimate the integral. By approximating the function with straight line segments, it calculates the area of each trapezoid. The rule states that the integral is approximately equal to the interval width multiplied by the average of the function values at the endpoints. The accuracy depends on the number of trapezoids used. Although it has limitations with highly curved functions, the trapezoidal rule is widely used for its simplicity and reasonable accuracy in many applications.
 
-
-
+# simsons 1/3 rule
+Simpson's 1/3 rule is a numerical integration method used to estimate definite integrals with higher accuracy compared to the trapezoidal rule. It utilizes quadratic polynomials to approximate the function being integrated.
+The rule divides the interval into subintervals and fits a quadratic polynomial to three points within each subinterval - the endpoints and the midpoint. The area under the quadratic polynomial represents the estimated integral for that subinterval.
+Mathematically, for a function f(x) to be integrated over an interval [a, b], Simpson's 1/3 rule can be expressed as:
+∫[a,b] f(x) dx ≈ (b - a) * [(f(a) + 4f((a+b)/2) + f(b)) / 6]
+The formula calculates the average of the function values at the endpoints and the midpoint, multiplied by the width of the interval divided by 6.
+Simpson's 1/3 rule is particularly useful when the function being integrated is relatively smooth or has an even degree. However, it requires an even number of subintervals to be applicable. It provides a more accurate approximation of definite integrals and is commonly employed in numerical analysis and scientific computing for its improved precision over the trapezoidal rule.
 
